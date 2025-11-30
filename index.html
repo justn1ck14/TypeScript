@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Мій простий сайт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Вітаю на моєму сайті!</h1>
+    <button id="openModal">Відкрити модальне вікно</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Дані з JSONPlaceholder</h2>
+      <div id="dataContainer"></div>
+    </section>
+  </main>
+
+  <!-- Модальне вікно -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <p>Це модальне вікно!</p>
+    </div>
+  </div>
+
+  <!-- Підключення скомпільованого JS -->
+  <script src="dist/app.js"></script>
+</body>
+</html>

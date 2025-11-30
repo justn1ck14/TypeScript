@@ -1,25 +1,19 @@
-// Типи
-let modalOpen: boolean = false;
-
-// Відкриття модального вікна
+// Відкриття/закриття модального вікна
 const modal: HTMLElement | null = document.getElementById("myModal");
 const btn: HTMLElement | null = document.getElementById("openModal");
+const closeBtn: HTMLElement | null = document.getElementById("closeModal");
 
 btn?.addEventListener("click", () => {
-  modalOpen = true;
   if (modal) modal.style.display = "block";
 });
 
-// Закриття модального вікна
-const closeBtn: HTMLElement | null = document.getElementById("closeModal");
 closeBtn?.addEventListener("click", () => {
-  modalOpen = false;
   if (modal) modal.style.display = "none";
 });
 
 // Scroll event
 window.addEventListener("scroll", () => {
-  console.log("Користувач скролить сторінку");
+  console.log("Сторінка скролиться!");
 });
 
 // Fetch даних
